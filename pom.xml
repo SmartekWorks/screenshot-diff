@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.swathub.dev</groupId>
-	<artifactId>result-merge</artifactId>
+	<artifactId>screenshot-diff</artifactId>
 	<version>1.0</version>
 
 	<dependencies>
@@ -36,7 +36,7 @@
 					</descriptorRefs>
 					<archive>
 						<manifest>
-							<mainClass>com.swathub.dev.ResultMerge</mainClass>
+							<mainClass>com.swathub.dev.ScreenshotDiff</mainClass>
 						</manifest>
 					</archive>
 				</configuration>

@@ -12,10 +12,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class ResultMerge {
+public class ScreenshotDiff {
 	public static void main(String[] args) throws Exception {
 		if (args.length <= 1) {
-			System.out.println("Usage: java -jar ResultMerge.jar <base path> <path1> <path2> ...");
+			System.out.println("Usage: java -jar ScreenshotDiff.jar <base path> <path1> <path2> ...");
 			return;
 		}
 
@@ -37,7 +37,7 @@ public class ResultMerge {
 			}
 		}
 
-		File mergeFolder = new File(baseFolder, "merge");
+		File mergeFolder = new File(baseFolder, "diff");
 		if (!mergeFolder.exists() || !mergeFolder.isDirectory()) {
 			if (!mergeFolder.mkdir()) {
 				throw new Exception("Can not create merge folder");
@@ -93,7 +93,7 @@ public class ResultMerge {
 
 			FileUtils.writeByteArrayToFile(mergerFile, outputStream.toByteArray());
 			outputStream.close();
-			System.out.println("Merge file is created. Name:" + mergeName + ".xls");
+			System.out.println("Diff file is created. Name:" + mergeName + ".xls");
 		}
 
 	}

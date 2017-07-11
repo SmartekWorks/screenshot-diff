@@ -1,3 +1,3 @@
 #!/bin/bash
 mvn package
-mv ./target/result-merge-1.0-jar-with-dependencies.jar ./ResultMerge.jar
+mv ./target/screenshot-diff-1.0-jar-with-dependencies.jar ./target/ScreenshotDiff.jar
